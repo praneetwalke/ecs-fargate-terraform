@@ -1,7 +1,7 @@
 resource "aws_ecs_service" "devopsuncut_sv" {
   name            = "my-esc-service"
-  cluster         = aws_ecs_cluster.devopsuncut-ecs-cluster.id
-  task_definition = aws_ecs_task_definition.devopsuncut_td.arn
+  cluster         = aws_ecs_cluster.my-ecs-cluster.id
+  task_definition = aws_ecs_task_definition.ecs_td.arn
   desired_count   = var.app_count
   launch_type     = "FARGATE"
 
