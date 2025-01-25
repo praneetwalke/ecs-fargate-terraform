@@ -8,7 +8,7 @@ resource "aws_ecs_task_definition" "devopsuncut_td" {
   container_definitions = <<DEFINITION
 [
   {
-    "image": "deleonabowu/javaapp:latest",
+    "image": "nginx:latest",
     "cpu": 2048,
     "memory": 4096,
     "name": "devops-uncut-webpage",

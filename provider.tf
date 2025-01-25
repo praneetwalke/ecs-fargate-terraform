@@ -14,10 +14,9 @@ terraform {
 
 terraform {
   backend "s3" {
-    bucket         = "devops-uncut-remote-backend"
+    bucket         = "ecs-tf-bucket01"
     key            = "ecs/terraform.tfstate"
     region         = "us-east-1"
-    dynamodb_table = "devops-uncut-terraform-locking"
-    encrypt        = true
+    
   }
 }
